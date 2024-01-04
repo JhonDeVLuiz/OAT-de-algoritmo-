@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigador</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+
+    <style>
+        input{
+            width: 15px;
+            height: 15px;
+        }
+    </style>
+</head>
+<body class="black">
+    <script src="scripts.js"></script>
+    <div>
+        <header>Investigador</header>
+
+        <h3>Responda ao interrogatório</h3>
+
+        <ul>
+
+            <li>
+                <div>
+                    <input type = "checkbox" id = "checkTelefonou">
+                    <label for="checkTelefonou">Telefonou para a vítima?</label> 
+                </div>
+                <div>
+                    <input type = "checkbox" id = "checkLocal">
+                    <label for="checkLocal">Esteve no local do crime?</label> 
+                </div>
+                <div>
+                    <input type = "checkbox" id = "checkMora">
+                    <label for="checkMora">Mora perto da vítima?</label> 
+                </div>
+                <div>
+                    <input type = "checkbox" id = "checkDevia">
+                    <label for="checkDevia">Devia para a vítima?</label> 
+                </div>
+                <div>
+                    <input type = "checkbox" id = "checkTrabalhou">
+                    <label for="checkTrabalhou">Já trabalhou com a vítima?</label> 
+                </div>
+            </li>
+
+            <li>
+                <button onclick="investigar()"> Investigar </button>
+            </li>
+
+            <li>
+                <div id='divresposta'>resultado</div>
+            </li>
+
+        </ul>        
+
+        <footer>
+            Desenvolvido por Jhon Luiz Sousa Santos <br>
+        </footer>
+    </div>
+</body>
+</html>
